@@ -4,10 +4,8 @@
 ## Write a short comment describing this function
 
 # Just testing!!
-<<<<<<< HEAD
 # Another test!!
-=======
->>>>>>> 0ba8e819002a41330238cb1e7653289b95905adc
+# one more
 
 makeCacheMatrix <- function(x = matrix()) {
 
