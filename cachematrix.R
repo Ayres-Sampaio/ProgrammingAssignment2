@@ -12,6 +12,7 @@
 #    4) getinv: Returns the inverse of the stored matrix
 
 makeCacheMatrix <- function(x = matrix()) {
+        # x, y, and inv are matrices
         i <- NULL
         set <- function(y) {
                 x <<- y
@@ -32,6 +33,9 @@ makeCacheMatrix <- function(x = matrix()) {
 # set to NULL).
 
 cacheSolve <- function(x, ...) {
+        # x is a special matrix object created using the makeCacheMatrix 
+        # function
+        # i and data are matrices
         i <- x$getinv()
         if(!is.null(i)) {
                 message("getting cached data")
