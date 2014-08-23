@@ -5,7 +5,7 @@
 # The makeCacheMatrix function receives a matrix as input and creates a 
 # special matrix object. The returned object is basically a list with four 
 # functions that allows the user to access and change the object content:
-#    1) set:    Rewrites the object's matrix based on an new input matrix 
+#    1) set:    Rewrites the object's matrix based on a new input matrix 
 #               and sets its inverse to null
 #    2) get:    Returns the stored matrix
 #    3) setinv: Caches the inverse of the stored matrix
