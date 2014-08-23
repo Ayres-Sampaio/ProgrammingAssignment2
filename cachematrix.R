@@ -23,11 +23,12 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 # The cacheSolve function receives the special matrix object created with 
-# makeCacheMatrix function as input and computes and caches its inverse. If 
-# the inverse has already been calculated, then the cacheSolve function 
-# retrieves the inverse from the cache. If the matrix has changed, cacheSolve 
-# calculates and caches the inverse again (when using the set function from 
-# makeCacheMatrix to change the input matrix the inverse is set to NULL).
+# makeCacheMatrix function as input and computes, caches, and returns its 
+# inverse. If the inverse has already been calculated, then the cacheSolve 
+# function retrieves the inverse from the cache. If the matrix has changed, 
+# cacheSolve calculates and caches the inverse again (when using the set 
+# function from makeCacheMatrix to change the input matrix the inverse is 
+# set to NULL).
 
 cacheSolve <- function(x, ...) {
         i <- x$getinv()
